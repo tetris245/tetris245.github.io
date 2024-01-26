@@ -51,8 +51,8 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
         await sleep(5000);
 
         if (Player.OnlineSharedSettings.Uwall == undefined) {
-                 Player.OnlineSharedSettings.Uwall = false;
-                 ServerAccountUpdate.QueueData({ OnlineSharedSettings: Player.OnlineSharedSettings });
+            Player.OnlineSharedSettings.Uwall = false;
+            ServerAccountUpdate.QueueData({ OnlineSharedSettings: Player.OnlineSharedSettings });
         }
 
         //Section under GPLv3 license
@@ -78,15 +78,14 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
                  ServerAccountUpdate.QueueData({ OnlineSharedSettings: Player.OnlineSharedSettings });
                  ChatRoomSendLocal(
                      "<p style='background-color:#5fbd7a'>Uwall protection disabled.</p>"
-                        );
+                );
              } else {
                  Player.OnlineSharedSettings.Uwall = true;
                  ServerAccountUpdate.QueueData({ OnlineSharedSettings: Player.OnlineSharedSettings });
-
                  ChatRoomSendLocal(
                      "<p style='background-color:#5fbd7a'>Uwall protection enabled.</p>"
-                        );
-                    }
+                );
+            }
         }
     }])
 
