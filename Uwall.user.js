@@ -71,7 +71,7 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
 
         CommandCombine([{
         Tag: 'uwall',
-        Description: "toggles protection from most ULTRAbc commands with target",
+        Description: "toggles protection from many ULTRAbc commands with target",
         Action: (args) => {
              if (Player.OnlineSharedSettings.Uwall == true) {
                  Player.OnlineSharedSettings.Uwall = false;
