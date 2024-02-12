@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name Uwall
 // @namespace https://www.bondageprojects.com/
-// @version 1.0
+// @version 1.1
 // @description Shield to protect you from UBC commands
 // @author Nemesea
 // @match https://bondageprojects.elementfx.com/*
@@ -42,7 +42,7 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
     const modApi = bcModSDK.registerMod({
         name: 'Uwall',
         fullName: 'Ultra Wall',
-        version: "1.0",
+        version: "1.1",
         repository: 'https://github.com/tetris245/Uwall',
     });
 
@@ -51,7 +51,7 @@ var bcModSDK=function(){"use strict";const e="1.1.0";function o(e){alert("Mod ER
         await sleep(5000);
 
         if (Player.OnlineSharedSettings.Uwall == undefined) {
-            Player.OnlineSharedSettings.Uwall = false;
+            Player.OnlineSharedSettings.Uwall = true;
             ServerAccountUpdate.QueueData({ OnlineSharedSettings: Player.OnlineSharedSettings });
         }
 
